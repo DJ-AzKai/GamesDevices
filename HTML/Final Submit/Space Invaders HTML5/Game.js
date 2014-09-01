@@ -1,7 +1,7 @@
 /**
  * Initialize the Game and starts it.
  */
- 
+ //credit to Steven Lambert for his blog tutorial on Game Structure.
  //credit to xXkaijuking91Xx for the star sprite
  //credit to sandbox.yoyogames.com for the ship sprite
 var game = new Game();
@@ -34,12 +34,6 @@ function Drawable() {
 	this.draw = function() {
 	};
 }
-/**
- * Define an object to hold all our images for the game so images
- * are only ever created once. This type of object is known as a 
- * singleton.
- */
- 
 function playBackgroundLoop()
 {
 	//works in fire fox and google
@@ -52,6 +46,12 @@ function playAbsorb()
 	var absorb = new Audio("Sounds/absorb.wav");
 	absorb.play();
 }
+
+/**
+ * Define an object to hold all our images for the game so images
+ * are only ever created once. This type of object is known as a 
+ * singleton.
+ */
 var imageRepository = new function() {
 	// Define images
 	this.empty = null;
