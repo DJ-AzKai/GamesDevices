@@ -215,6 +215,7 @@ function Star(){
 		this.context.clearRect(this.x, this.y, this.width, this.height);
 		this.x -= 1000;
 		this.x -= Math.floor(Math.random()*200); //just to space them out a bit
+		this.y = Math.floor(Math.random()*340);
 	}
 }
 Star.prototype = new Drawable();
